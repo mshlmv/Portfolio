@@ -1,0 +1,15 @@
+section.feedback
+  .wrap
+    h1.section-heading Обратная связь
+    form.feedback-form.js-feedback(action="#" name="form")
+      .input-group.input-name
+        label.input-group__label(for="uName") Ваше имя
+        input.input-group__field(name="uName" id="uName" type="text" placeholder="Марина")
+      .input-group.input-tel
+        label.input-group__label(for="uPhone") Ваш телефон
+        input.input-group__field(name="uPhone" id="uPhone" type="tel"
+          placeholder="9221134515")
+      button.btn.btn--square.btn--blue(type="submit") 
+        span.btn__text Отправить
+        svg.btn__icon.icon--send
+          use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#send")

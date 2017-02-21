@@ -1,0 +1,68 @@
+/*
+* header.styl
+*/
+
+.site-header
+  background url("../img/assets/header/site-header__bg--mobile.jpg") 0px 0px no-repeat $main-color
+  text-align center
+  color #fff
+  position relative
+  min-height 450px
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)
+    min-height 500px
+  +above('sm')
+    background url("../img/assets/header/site-header__bg--tablet.jpg") 0px 0px no-repeat $main-color
+    // min-height 600px
+  +above('md')
+    background url("../img/assets/header/site-header__bg--992.jpg") 0px 0px no-repeat $main-color
+  +above('lg')
+    background url("../img/assets/header/site-header__bg--full.jpg") 0px 0px no-repeat $main-color
+  +above(1025px)
+    max-height 600px
+
+.top-header
+  display flex
+  flex-direction column
+  +above('sm')
+    flex-direction row
+    justify-content space-around
+
+.site-logo
+  font 0/0 a
+  text-shadow none
+  color transparent
+  margin torem(25px) auto 0
+  background url("../img/fixim_logotype.svg") no-repeat
+  width 235px
+  height 75px
+  +above('sm')
+    margin torem(25px) 0 0
+
+.header__numbertel
+  font-size torem(32px)
+  color #fff
+  font-family "RobotoSlabRegular"
+  margin-top torem(40px)
+  line-height 1
+  &:hover, &:active
+    color #fff
+    text-decoration none
+
+.hero-heading
+  font-size torem(36px)
+  font-family "RobotoSlabBold"
+  line-height 1.2
+  margin-top torem(50px)
+  +above('md')
+    font-size torem(48px)
+    margin-top torem(80px)
+  +above('lg')
+    font-size torem(64px)
+
+.hero-subheading
+  font-family "RobotoLight"
+  font-size torem(20px)
+  line-height 1.2
+  margin-top torem(30px)
+  +above('lg')
+    font-size torem(24px)

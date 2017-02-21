@@ -1,0 +1,27 @@
+/*====================
+* Main styles
+* file: app.styl
+* dir: /styles
+====================*/
+
+// @import 'typographic'
+// typographic()
+
+.site
+  display flex
+  flex-direction column
+  min-height 100vh
+
+.site-content
+  flex 1
+
+.wrap
+  max-width 1120px
+  margin 0 auto
+  padding 0 torem(15px)
+
+.stages-faq
+  display flex
+  flex-flow column nowrap
+  +above('md')
+    flex-flow row nowrap

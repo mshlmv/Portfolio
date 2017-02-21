@@ -1,0 +1,60 @@
+/*
+* superiority.styl
+*/
+
+.superiority
+  margin-top torem(40px)
+  padding torem(30px)
+  background url("../img/assets/superiority/superiority__bg.png")
+  +above('lg')
+    padding torem(60px)
+
+.superiority-list
+  display flex
+  flex-flow row wrap
+  list-style-type none
+  padding-left 0
+  margin-top torem(35px)
+  +above('lg')
+    flex-flow row nowrap
+    margin-top torem(60px)
+
+.superiority-list__item
+  display flex
+  h2
+    font-size torem(17px)
+    font-family "RobotoBold"
+  p
+    font-size torem(15px)
+    font-family "RobotoLight"
+  +above('md')
+    flex-basis 50%
+    padding-right 5%
+    h2
+      font-size torem(20px)
+    p
+      font-size torem(18px)
+  +above('lg')
+    flex-flow column nowrap
+    align-items center
+    flex-basis 100%
+    text-align center
+
+.superiority-list__icon
+  width 100%
+  height auto
+  max-width 40px
+  max-height 40px
+  +above('md')
+    max-width 50px
+    max-height 50px
+
+
+.superiority-list__text
+  padding-left torem(20px)
+  h2
+    margin-bottom 0
+  +above('md')
+    margin-top torem(20px)
+  +above('lg')
+    padding-left 0

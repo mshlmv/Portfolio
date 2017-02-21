@@ -1,0 +1,42 @@
+/*
+* backForm.styl
+*/
+
+.back-form
+  display none
+  background-color $gray-lighter
+  padding torem(30px) torem(105px) torem(60px)
+  height 220px
+  font-family RobotoLight
+  font-size torem(12px)
+  h3
+    font-family RobotoSlabBold
+    font-size 1rem
+    text-transform uppercase
+    margin torem(5px) 0 torem(10px)
+  +above(1280px)
+    display flex
+
+.back-form__wrap
+  display flex
+  justify-content space-between
+.bf-block
+  flex-basis 25%
+  ol
+    padding-left 0
+  +below('lg')
+    display none
+.bf-block--left
+  padding-right 40px
+.bf-block--right
+  padding-left 60px
+  p
+    margin-bottom 0
+
+.back-form__icon
+  width 31px
+  height 33px
+  float left
+  margin-right torem(10px)
+
+

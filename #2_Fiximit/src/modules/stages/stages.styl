@@ -1,0 +1,52 @@
+/*
+* stages.styl
+*/
+
+.stages
+  margin-top torem(40px)
+  +above('lg')
+    width 50%
+    padding 0 5%
+
+.stages-list
+  counter-reset stagesCounter
+  padding-left 0
+  margin-top torem(35px)
+  font-family "RobotoLight"
+  font-size torem(14px)
+  +above(640px)
+    font-size torem(18px)
+    +below('lg')
+      padding 0 10%
+
+.stages-list__item
+  position relative
+  margin-bottom 1rem
+  list-style none
+  padding-left torem(55px)
+  &::before
+    content counter(stagesCounter)
+    counter-increment stagesCounter
+    position absolute
+    top 0
+    left 0
+    width torem(40px)
+    height @width
+    font-family "RobotoSlabBold"
+    font-size torem(23px)
+    text-align center
+    border 1px solid $main-color
+    border-radius 50%
+    z-index 1
+  &::after
+    position absolute
+    top torem(40px)
+    left torem(19px)
+    width 3px
+    height calc(100% - 23px)
+    content ''
+    background-color $main-color
+    z-index 0
+  &:last-child
+    &::after
+      content none

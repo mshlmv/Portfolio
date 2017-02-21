@@ -1,0 +1,24 @@
+extends layouts/_default.jade
+include helpers/_variables.jade
+include helpers/_mixins.jade
+include ../modules/services/services
+include ../modules/faq/faq
+include ../modules/reviews/reviews
+block title
+  title Служба компьютерной помощи – Фиксим
+
+block header-form
+  include ../modules/cbForm/cbForm
+
+block content
+  include ../modules/header/header
+  main.site-content
+    include ../modules/backForm/backForm
+    +services(services)
+    include ../modules/superiority/superiority
+    .stages-faq
+      include ../modules/stages/stages
+      +faq(faq)
+    include ../modules/feedback/feedback
+    +reviews(reviews)
+  include ../modules/footer/footer

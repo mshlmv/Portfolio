@@ -1,0 +1,11 @@
+include ../../pages/helpers/_variables.jade
+
+header.site-header
+  .wrap
+    .top-header
+      a.site-logo(title="Mr. Fix" href="/") Фиксим
+      a.header__numbertel(href="tel:#{phoneNumberHref}") #{phoneNumber}
+    block header  
+      h1.hero-heading Компьютерная помощь по доступным ценам
+      h2.hero-subheading Решение любых компьютерных проблем у&nbsp;вас дома или в&nbsp;офисе. <br> В&nbsp;течении 2&nbsp;часов, без «сюрпризов» с&nbsp;ценой.
+    block header-form 

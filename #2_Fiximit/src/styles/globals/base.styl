@@ -1,0 +1,31 @@
+/*====================
+* Base styles
+* file: base.styl
+* dir: /styles/globals
+====================*/
+
+.btn
+  border 1px solid transparent;
+  width 100%
+
+.btn--round
+  border-radius 30px
+  font-size torem(18px)
+  font-family "RobotoSlabBold"
+  line-height 1
+  padding torem(10px) 1rem
+  +above('sm')
+    font-size torem(24px)
+  +above('lg')
+    font-size torem(32px)
+
+.btn--square
+  @extend .btn--round
+  border-radius 8px
+  border 2px solid #004EDD
+  font-size torem(20px)
+  padding torem(10px) torem(20px)
+
+.btn--blue
+  background: #005AFF;
+  color #fff

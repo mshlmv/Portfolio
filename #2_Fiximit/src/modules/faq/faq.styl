@@ -1,0 +1,61 @@
+/*
+* faq.styl
+*/
+
+.faq
+  margin-top torem(40px)
+  min-width 50%
+  +above('lg')
+    width 50%
+    padding 0 5%
+
+.faq__list
+  margin-top torem(35px)
+  font-size torem(14px)
+  padding-left 0
+  +above(640px)
+    +below('lg')
+      font-size 1rem
+      padding 0 10%
+
+.faq__item
+  list-style none
+  margin-bottom torem(25px)
+
+.faq__question
+  color $main-color
+  font-family "RobotoBold"
+  text-decoration none
+  display flex
+  flex-flow row nowrap
+  &:hover,
+  &:focus
+    text-decoration none
+    color $second-color
+    &::before
+      background-color $second-color
+  &::before
+    display block
+    width torem(20px)
+    height torem(20px)
+    text-align center
+    border-radius torem(5px)
+    background-color $main-color
+    color $body-bg-color
+    font-weight bold
+    font-size torem(20px)
+    line-height 1
+    margin-right torem(15px)
+    vertical-align middle
+
+.faq__question--plus
+  &::before
+    content '+'
+
+.faq__question--minus
+  &::before
+    content '−'
+
+.faq__answer
+  display none
+  padding-left torem(35px)

@@ -1,0 +1,44 @@
+/*
+* reviews.styl
+*/
+
+.reviews
+  margin-top torem(40px)
+
+.reviews__list
+  list-style-type none
+  padding-left 0
+  display flex
+  flex-flow column nowrap
+  +above('md')
+    flex-flow row wrap
+
+.reviews__item
+  margin-top torem(50px)
+  padding-left torem(20px)
+  flex-basis 100%
+  +above('md')
+    flex-basis 50%
+    padding-left torem(40px)
+
+.reviews__img
+  float left
+  width 56px
+  height @width
+  margin-right 1rem
+  border-radius 50%
+
+.reviews__name
+  font-size torem(18px)
+  margin-bottom 0
+
+.reviews__link
+  display inline-block
+  font-family "RobotoLight"
+  font-size torem(14px)
+  margin-bottom 1rem
+  text-decoration underline
+
+.reviews__text
+  font-family "RobotoLight"
+  font-size 1rem

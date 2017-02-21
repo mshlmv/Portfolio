@@ -1,0 +1,9 @@
+mixin faq(data)
+  section.faq
+    .wrap
+      h1.section-heading Ответы на вопросы
+      ul.faq__list
+        for item in data['list']  
+          li.faq__item
+            a.faq__question.faq__question--plus(href="#0")= item.question
+            p.faq__answer= item.answer

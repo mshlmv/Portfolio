@@ -1,0 +1,67 @@
+/*
+* footer.styl
+*/
+
+.site-footer
+  background-color $main-color
+  color #fff
+  font-size torem(14px)
+  padding torem(30px) 5% torem(15px)
+  margin-top torem(50px)
+
+.footer-content
+  display flex
+  flex-flow column nowrap
+  +above('md')
+    flex-flow row nowrap
+    // justify-content space-between
+
+.footer__social
+  margin-bottom torem(40px)
+  display flex
+  justify-content space-around
+  .ya-share2
+    margin-bottom torem(30px)
+  +above('md')
+    order 1
+    min-width 600px
+
+.social-icons
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+
+.social-icon
+  display flex
+  justify-content center
+  line-height 2rem
+  padding 5px 10px
+  color #fff
+  border 1px solid #fff
+  border-radius 3px
+  margin-right 10px
+  margin-bottom 20px
+  flex-basis calc( percentage(1/4) - 10px)
+  flex-grow 1
+  &:hover,
+  &:active,
+  &:focus
+    color #fff
+    text-decoration none
+  svg
+    width 2rem
+    height @width
+    margin-left 10px
+
+.footer__copyright
+  +above('md')
+    margin-right torem(30px)
+    min-width 350px
+
+.copyright__agency
+  margin-bottom torem(25px)
+  p
+    margin-bottom 0
+  a
+    color #fff
+    text-decoration underline

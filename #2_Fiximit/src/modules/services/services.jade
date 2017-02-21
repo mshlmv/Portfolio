@@ -1,0 +1,29 @@
+mixin services(data)
+  section.services
+    .wrap
+      h1.section-heading Наши услуги
+      .category-filter
+        .mobile-filter-wrapper
+          select.mobile-filter
+            for item in services.categories
+              option= item
+        .desktop-filter
+          for item in services.categories
+            label.filter-category
+              input(type="radio" name="category")
+              span= item
+      ul.services-items
+        for card in data['items']
+          li.items__card
+            h2.card-title= card.title
+            if card.desc
+              p.card-desc= card.desc
+            p.card-price
+              if card.sPrice
+                | от&nbsp;
+                span= card.sPrice
+              else
+                span= card.price
+              | &nbsp;руб.
+            if card.note
+              p.card-note= card.note

@@ -1,0 +1,11 @@
+mixin reviews(data)
+  section.reviews
+    .wrap
+      h1.section-heading Отзывы
+      ul.reviews__list
+        for item in data['list']  
+          li.reviews__item
+            img.reviews__img(src="#{item.img}", alt="#{item.name}")
+            p.reviews__name= item.name
+            a.reviews__link(href="//#{item.link}")= item.link
+            p.reviews__text= item.text

@@ -1,0 +1,16 @@
+.cb-form
+  form.cbForm.js-cbForm(action="#" name="form")
+    .input-group.input-name
+      label.input-group__label(data-label="Введите ваше имя"
+      data-label-alt="Ваше имя")
+        svg.input-group__icon.icon--user
+          use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#smiley")
+        input.input-group__field(name="uName" type="text" placeholder="Марина")
+    .input-group.input-tel
+      label.input-group__label(data-label="Введите ваш телефон"
+      data-label-alt="Ваш телефон")
+        svg.input-group__icon.icon--tel
+          use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#phone")
+        input.input-group__field(name="uPhone" type="tel"
+        placeholder="9221134515")
+    button.btn.btn--round.btn--blue(type="submit") Позвоните мне

@@ -1,0 +1,69 @@
+/*
+* feedback.styl
+*/
+
+.feedback
+  margin-top torem(40px)
+  background url("../img/assets/feedback/feedback__bg.png")
+  padding torem(20px)
+
+.feedback-form
+  display flex
+  flex-flow column nowrap
+  align-items center
+  +above(640px)
+    flex-flow row nowrap
+    justify-content center
+    align-items flex-end
+    margin-top torem(35px)
+
+  .input-group
+    width 100%
+    max-width 300px
+    margin-top torem(35px)
+    +above(640px)
+      margin-top 0
+      margin-right 5%
+
+  .input-group__label
+    color #fff
+    background-color $main-color
+    font-size torem(12px)
+    padding 0 5px
+    margin-bottom 0
+    position relative
+    bottom -3px
+    left 10px
+
+  .input-group__field
+    width 100%
+    border-radius 8px
+    border 2px solid $main-color
+    font-size 1rem
+    padding torem(10px) torem(20px)
+    +above(640px)
+      height 56px
+
+  .btn
+    margin-top torem(25px)
+    max-width 300px
+    display flex
+    flex-flow row nowrap
+    justify-content center
+    +above(640px)
+      margin-top 0
+      flex-basis 15%
+
+  .btn__text
+    line-height 32px
+    +above(640px)
+      display none
+      line-height 1
+
+  .btn__icon
+    font-size 2rem
+    width 1em
+    height 1em
+    margin-left 1em
+    +above(640px)
+      margin-left 0
