@@ -1,0 +1,7 @@
+mixin About(data)
+  .container
+    .about-wrap
+      .section-heading!= data.section_heading
+      .about-columns.row
+        for column in data['columns']
+          .about-column.col-xs-4!= column.text

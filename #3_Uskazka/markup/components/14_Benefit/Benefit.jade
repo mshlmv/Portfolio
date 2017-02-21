@@ -1,0 +1,6 @@
+mixin Benefit(data)
+  .container: .benefit-grid.row
+    for benefit in data['benefits']
+      .benefit.col-xs-4
+        .benefit-circle= benefit.circle
+        .benefit-text= benefit.text

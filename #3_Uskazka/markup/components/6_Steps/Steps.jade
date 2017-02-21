@@ -1,0 +1,28 @@
+mixin Steps(data)
+  .container
+    header.section-heading
+      h1.head Этапы строительства Вашей бани из бруса
+    .steps-grid.row
+      for step in data['steps']
+        .step-block.col-xs-3
+          .step-image-border
+            img.step-image(src="#{step.src}", alt="#{step.title}")
+          .step-number= step.number
+          .step-head: h3= step.title
+          .step-text= step.text
+    .steps-cta-wrap: .steps-cta.modal-style
+      .steps-cta__heading
+        h2 Всего 4 шага отделяют Вас от бани о который Вы мечтали
+        p Просто отправьте заявку на бесплатную консултацию
+      form.steps-cta__form.form-inline.js-ajax_form(action="send.php" method="POST")
+        .form-group
+          label.form-label(for="name") Ваше имя
+          input.form-input(type="text" id="name" name="name" placeholder="Евгений Садко")
+        .form-group
+          label.form-label(for="tel") Ваш телефон *
+          input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+        .form-group
+          button.btn.btn-primary.btn-block(type="submit") Отправить зявку
+          .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+      .footnote * — поля обязательные для заполнения
+

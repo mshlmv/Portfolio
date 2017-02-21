@@ -1,0 +1,105 @@
+mixin Modals(data)
+  #order.modal.fade(tabindex="-1", role="dialog", aria-labelledby="orderLabel")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+          h3#orderLabel.modal-title
+          p.modal-subtitle
+        .modal-body
+          form.order-form.js-ajax_form(action="send.php" method="POST")
+            .form-group
+              label.form-label(for="name") Ваше имя
+              input.form-input(type="text" id="name" name="name" placeholder="Евгений Садко")
+            .form-group
+              label.form-label(for="tel") Ваш телефон *
+              input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+            .form-group
+              button.btn.btn-primary.btn-block(type="submit") Отправить
+              .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+          .footnote * — поля обязательные для заполнения
+  #project.modal.fade(tabindex="-1", role="dialog", aria-labelledby="projectLabel")
+    .modal-dialog.modal-lg(role="document")
+      .modal-content
+        .modal-header
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          .project-content.row
+            .project-slide.col-xs-4
+              div(id="carousel-modal" class="carousel slide" data-ride="carousel" data-interval="")
+                div(class="carousel-inner")
+                  div(class="item active")
+                    .image-render: img.img-responsive(src="")
+                  div(class="item")
+                    .image-scheme: img.img-responsive(src="")
+                  div(class="item")
+                    .image-photo: img.img-responsive(src="")
+                  a(class="left carousel-control" href="#carousel-modal" data-slide="prev")
+                    .carousel-button.left
+                  a(class="right carousel-control" href="#carousel-modal" data-slide="next")
+                    .carousel-button.right
+                ol.carousel-indicators.mCustomScrollbar
+                  li.image-render_thumb.active(data-target="#carousel-modal", data-slide-to="0")
+                    img(src="")
+                  li.image-scheme_thumb(data-target="#carousel-modal", data-slide-to="1")
+                    img(src="")
+                  li.image-photo_thumb(data-target="#carousel-modal", data-slide-to="2")
+                    img(src="")
+            .project-text.col-xs-8
+              h3#projectLabel.modal-title
+              p.modal-subtitle
+              span.project__feature
+                strong Габариты:&nbsp;
+                span.project__dimensions
+              span.project__feature
+                strong Площадь:&nbsp;
+                span.project__square
+              span.project__feature
+                strong Цена:&nbsp;
+                span.project__price
+              .project__picking
+                strong Комплектация
+                .picking-text
+          .project-form-wrap
+            form.project-form.form-inline.js-ajax_form(action="send.php" method="POST")
+              h4 Заполните форму и получите смету и проект на эту баню из бруса через 1 час
+              .form-group
+                label.form-label(for="name") Ваше имя
+                input.form-input(type="text" id="name" name="name" placeholder="Евгений Садко")
+              .form-group
+                label.form-label(for="tel") Ваш телефон *
+                input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+              .form-group
+                button.btn.btn-primary.btn-block(type="submit") Отправить
+                .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+            .footnote * — поля обязательные для заполнения
+  #politics.modal.fade(tabindex="-1", role="dialog", aria-labelledby="politicsLabel")
+    .modal-dialog.modal-lg(role="document")
+      .modal-content
+        .modal-header
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+          h3#politicsLabel.modal-title Политика конфедициальности
+        .modal-body!= data.politics_text
+  #more-projects.modal.fade(tabindex="-1", role="dialog", aria-labelledby="orderLabel")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          button.close(type="button", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+          h3#orderLabel.modal-title Скачать полный каталог проектов
+          p.modal-subtitle Каталог придет вам на почту сразу после отправки формы
+        .modal-body
+          form.order-form.js-ajax_form(action="send.php" method="POST")
+            .form-group
+              label.form-label(for="email") Ваш email *
+              input.form-input(type="text" id="email" name="email" placeholder="eygenius@mail.ru")
+            .form-group
+              label.form-label(for="tel") Ваш телефон *
+              input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+            .form-group
+              button.btn.btn-primary.btn-block(type="submit") Отправить
+              .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+          .footnote * — поля обязательные для заполнения

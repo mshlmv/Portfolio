@@ -1,0 +1,17 @@
+mixin Subform(data)
+  .subform-wrap.container
+    .subform-heading: h2 Получите каталог проектов в формате ПДФ
+    form.subform-form.form-inline.js-ajax_form(action="send.php" method="POST")
+      .form-group
+        label.form-label(for="name") Ваше имя
+        input.form-input(type="text" id="name" name="name" placeholder="Евгений Садко")
+      .form-group
+        label.form-label(for="email") Ваш емейл *
+        input.form-input(type="email" id="email" name="email" placeholder="e.sadko@ya.ru" required)
+      .form-group
+        label.form-label(for="tel") Ваш телефон *
+        input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+      .form-group
+        button.btn.btn-primary.btn-block(type="submit") Получить каталог
+        .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+    .footnote * — поля обязательные для заполнения

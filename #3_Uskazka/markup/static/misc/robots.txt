@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /*utm_source=
+
+Host: u-skazka.ru

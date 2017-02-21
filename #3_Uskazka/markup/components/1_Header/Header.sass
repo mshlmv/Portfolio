@@ -1,0 +1,81 @@
+.header
+  background-image: url("%=static=%assets/1_Header/Header-background.jpg")
+  background-position: 50% 50%
+  background-size: cover
+  background-color: antiquewhite
+  padding-bottom: 105px
+
+.company__description
+  font-size: 14px
+
+.logotype__link
+  display: block
+  line-height: 0
+
+.company__description,
+.telephone-number__link,
+.callback-button__link
+  color: #fff
+
+.telephone-number__link,
+.callback-button__link,
+.telephone-number__link:hover,
+.callback-button__link:hover
+  text-decoration: none
+
+.telephone-number__link
+  font-size: 23px
+  &:hover
+    color: #fff
+    border-bottom: 1px dashed rgba(#fff, 0.5)
+
+.callback-button__link
+  font-size: 14px
+  font-weight: 700
+  padding: 15px 0
+  text-transform: uppercase
+
+
+.company__description,
+.telephone-number,
+.callback-button
+  margin-top: 40px
+
+.hero
+  font-family: $heading-font-family
+  font-size: 46px
+  font-weight: 700
+  color: #fff
+  line-height: 60px
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.50)
+  text-align: center
+  margin: 0
+
+.header_cta
+  padding: 0 50px
+
+.header_cta__container
+  background: $background-color
+  padding: 10px
+  width: 100%
+
+.header_cta__border
+  border: 2px solid $dark_brown-color
+  padding: 15px 35px
+
+.header_cta__list
+  list-style: none
+  padding-left: 0
+  > li::before
+    content: "+"
+    font-size: 23px
+    font-weight: 900
+    line-height: 27px
+    padding-right: 10px
+
+.header_cta__button
+  margin-top: 8px
+
+.header_hero,
+.header_cta
+  margin-top: 105px

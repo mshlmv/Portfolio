@@ -1,0 +1,20 @@
+mixin Salesform(data)
+  .container
+      .salesform-wrap.row
+        .salesform-photo-wrap.col-xs-4
+          img.salesform-photo(src="%=static=%img/assets/8_Salesform/sales-photo.jpg", alt="Илья Выдрин, главный по баням")
+        .salesform-text-wrap.col-xs-8
+          .salesform-heading: h2 Бесплатно проконсультирую Вас по проектам и сделаю предварительный расчет
+          p Так же помогу выбрать подходящий проект, составить индивидуальный или изменить типовой проект специально для Вас.
+          p Просто позвоните мне <strong>+7 (343) 271-88-90</strong> или отправьте мне свой номер и я Вам перезвоню в течении 1 часа
+          form.callback-form.form-inline.js-ajax_form(action="send.php" method="POST")
+            .form-group
+              label.form-label(for="tel") Ваш телефон *
+              input.form-input(type="tel" id="tel" name="tel" placeholder="89221112131" required)
+            .form-group
+              button.btn.btn-primary.btn-block(type="submit") Обратный звонок
+              .security-guarantee: a(role="button" tabindex="0") Ваши данные в безопасности
+          .footnote * — поля обязательные для заполнения
+          .photonote
+            | Илья Выдрин,
+            div: em главный по баням

@@ -1,0 +1,25 @@
+mixin Header(data)
+  .container
+    .header_top.row
+      .company.col-xs-6
+        .row
+          .company__logotype.col-xs-3
+            a.logotype__link(href="/"): img.logotype__image(src="%=static=%img/assets/1_Header/Logotype.png", alt="Уральская Сказка")
+          .company__description.col-xs-9
+            div Проект СК «Спутник»
+            div: strong Строительство бань из зимнего бруса <br> в Екатерибурге и СО с гарантией 10 лет
+            //- div Работаем с 2007 года
+      .telephone-number.col-xs-3: a.telephone-number__link(href="tel://#{data.telephone_link}"): span #{data.telephone_number}
+      .callback-button.col-xs-3: button.callback-button__link.btn.btn-ghost.btn-block(type="button" data-toggle="modal" data-target="#order" data-heading="Заказать обратный звонок" data-subtitle="Оставьте заявку в форме ниже. Специалист свяжется с Вами в течении 15 минут") Бесплатная консультация
+    .header_hero
+      h1.hero Строим бани из зимнего бруса по типовым и индивидуальным проектам от 70 000 рублей
+    .header_cta
+      .header_cta__container
+        .header_cta__border: .row
+          .col-xs-9: ul.header_cta__list
+            li Постоянные бригады мастеров с опытом работы более 5 лет
+            li Собственное производство бруса и комплектующих, без посредников
+            li Возвращаем 1/1000 стоимости за каждый день просрочки сдачи проекта
+          .col-xs-3: button.header_cta__button.btn.btn-info.btn-block.btn-wrap(type="button" data-toggle="modal" data-target="#order" data-heading="Заполните форму и получите бесплатный расчет сметы под свою баню из бруса через 8 часов" data-subtitle="") Сделать заявку на бесплатный расчет проекта
+
+

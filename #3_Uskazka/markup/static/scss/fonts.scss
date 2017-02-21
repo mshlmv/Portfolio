@@ -1,0 +1,70 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+
+*/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-400-normal.eot');
+    src: url('../fonts/opensans-400-normal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-400-normal.woff2') format('woff2'),
+         url('../fonts/opensans-400-normal.woff') format('woff'),
+         url('../fonts/opensans-400-normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-400-italic.eot');
+    src: url('../fonts/opensans-400-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-400-italic.woff2') format('woff2'),
+         url('../fonts/opensans-400-italic.woff') format('woff'),
+         url('../fonts/opensans-400-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-700-normal.eot');
+    src: url('../fonts/opensans-700-normal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-700-normal.woff2') format('woff2'),
+         url('../fonts/opensans-700-normal.woff') format('woff'),
+         url('../fonts/opensans-700-normal.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/robotoslab-400-normal.eot');
+    src: url('../fonts/robotoslab-400-normal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotoslab-400-normal.woff2') format('woff2'),
+         url('../fonts/robotoslab-400-normal.woff') format('woff'),
+         url('../fonts/robotoslab-400-normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/robotoslab-700-normal.eot');
+    src: url('../fonts/robotoslab-700-normal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotoslab-700-normal.woff2') format('woff2'),
+         url('../fonts/robotoslab-700-normal.woff') format('woff'),
+         url('../fonts/robotoslab-700-normal.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

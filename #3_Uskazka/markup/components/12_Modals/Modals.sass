@@ -1,0 +1,66 @@
+#order,
+#more-projects
+  .modal-header
+    text-align: center
+  .modal-title
+    margin-bottom: 15px
+  .modal-subtitle,
+  .modal-body
+    width: 400px
+    margin: 0 auto
+#project
+  .project__feature
+    margin-right: 25px
+  .project__picking
+    margin-top: 15px
+  .project-form-wrap h4
+    text-align: center
+.project-form > .form-group
+  width: 32%
+
+#carousel-modal .carousel-indicators
+  margin: 10px 0 0
+  overflow: auto
+  position: static
+  text-align: left
+  white-space: nowrap
+  width: 100%
+#carousel-modal .carousel-indicators li
+  background-color: transparent
+  -webkit-border-radius: 0
+  border-radius: 0
+  display: inline-block
+  height: auto
+  margin: 0 !important
+  width: auto
+#carousel-modal .carousel-indicators li img
+  display: block
+  opacity: 0.5
+#carousel-modal .carousel-indicators li.active img
+  opacity: 1
+#carousel-modal .carousel-indicators li:hover img
+  opacity: 0.75
+#carousel-modal .carousel-outer
+  position: relative
+
+.carousel-button
+  width: 32px
+  display: block
+  top: 50%
+  height: 32px
+  background-image: url('/static/img/plugins/controls.png')
+  cursor: pointer
+  position: absolute
+  z-index: 99
+  margin-top: -16px
+  // opacity: 0.5
+  -webkit-transition: opacity 0.35s linear 0s
+  transition: opacity 0.35s linear 0s
+  &:hover
+    opacity: 1
+.carousel-button.left
+  background-position: 0 0
+  left: 10px
+.carousel-button.right
+  background-position: -32px 0
+  right: 10px

@@ -1,0 +1,75 @@
+mixin Picking(data)
+  .container
+    header.section-heading
+      h1.head= data.section_heading
+    .picking-tabs
+      ul.nav.nav-tabs(id="pickingTabs" role="tablist")
+        li.picking-tabs__tab.active(role="presentation")
+          a(href="#oneTab" aria-controls="oneTab" role="tab" data-toggle="tab")
+            h2= data.tab_one__heading
+        li.picking-tabs__tab(role="presentation")
+          a(href="#twoTab" aria-controls="twoTab" role="tab" data-toggle="tab")
+            h2= data.tab_two__heading
+
+      #pickingTabContent.tab-content
+        #oneTab.tab-pane.active(role="tabpanel")
+          .row
+            .tab-content__text.col-xs-7.col-xs-push-5
+              #accordion-oneTab.panel-group(role='tablist', aria-multiselectable='true')
+                if data.tab_one__panel_one
+                  .panel
+                    #headingOne-oneTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link(role='button', data-toggle='collapse', data-parent='#accordion-oneTab', href='#collapseOne-oneTab', aria-expanded='true', aria-controls='collapseOne-oneTab')= data.tab_one__heading_one
+                    #collapseOne-oneTab.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne-oneTab')
+                      .panel-body!= data.tab_one__panel_one
+                if data.tab_one__panel_two
+                  .panel
+                    #headingTwo-oneTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link.collapsed(role='button', data-toggle='collapse', data-parent='#accordion-oneTab', href='#collapseTwo-oneTab', aria-expanded='false', aria-controls='collapseTwo-oneTab')= data.tab_one__heading_two
+                    #collapseTwo-oneTab.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo-oneTab')
+                      .panel-body!= data.tab_one__panel_two
+                if data.tab_one__panel_three
+                  .panel
+                    #headingThree-oneTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link.collapsed(role='button', data-toggle='collapse', data-parent='#accordion-oneTab', href='#collapseThree-oneTab', aria-expanded='false', aria-controls='collapseThree-oneTab')= data.tab_one__heading_three
+                    #collapseThree-oneTab.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree-oneTab')
+                      .panel-body!= data.tab_one__panel_three
+            .tab-content__image.col-xs-5.col-xs-pull-7
+              img(src="#{data.tab_one__image}", alt="#{data.tab_one__heading}")
+              .picking-cta-wrap
+                .col-xs-6: button.picking__button.btn.btn-info.btn-block.btn-lg(type="button" data-toggle="modal" data-target="#order" data-heading="Заполните форму и получите бесплатную консультацию по типовым проектам и комплектациям через 1 час" data-subtitle="") Подробнее
+                .col-xs-6: .footnote В течении 1 часа мы вам перезвоним и бесплатно проконсультируем по проекту
+
+        #twoTab.tab-pane(role='tabpanel')
+          .row
+            .tab-content__text.col-xs-7
+              #accordion-twoTab.panel-group(role='tablist', aria-multiselectable='true')
+                if data.tab_two__panel_one
+                  .panel
+                    #headingOne-twoTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link(role='button', data-toggle='collapse', data-parent='#accordion-twoTab', href='#collapseOne-twoTab', aria-expanded='true', aria-controls='collapseOne-twoTab')= data.tab_two__heading_one
+                    #collapseOne-twoTab.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne-twoTab')
+                      .panel-body!= data.tab_two__panel_one
+                if data.tab_two__panel_two
+                  .panel
+                    #headingTwo-twoTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link.collapsed(role='button', data-toggle='collapse', data-parent='#accordion-twoTab', href='#collapseTwo-twoTab', aria-expanded='false', aria-controls='collapseTwo-twoTab')= data.tab_two__heading_two
+                    #collapseTwo-twoTab.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo-twoTab')
+                      .panel-body!= data.tab_two__panel_two
+                if data.tab_two__panel_three
+                  .panel
+                    #headingThree-twoTab.panel-heading(role='tab')
+                      h3.panel-title
+                        a.panel-link.collapsed(role='button', data-toggle='collapse', data-parent='#accordion-twoTab', href='#collapseThree-twoTab', aria-expanded='false', aria-controls='collapseThree-twoTab')= data.tab_two__heading_three
+                    #collapseThree-twoTab.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree-twoTab')
+                      .panel-body!= data.tab_two__panel_three
+            .tab-content__image.col-xs-5
+              img(src="#{data.tab_two__image}", alt="#{data.tab_one__heading}")
+              .picking-cta-wrap
+                .col-xs-6: button.picking__button.btn.btn-info.btn-block.btn-lg(type="button" data-toggle="modal" data-target="#order" data-heading="Заполните форму и получите бесплатную консультацию по типовым проектам и комплектациям через 1 час" data-subtitle="") Подробнее
+                .col-xs-6: .footnote В течении 1 часа мы вам перезвоним и бесплатно проконсультируем по проекту

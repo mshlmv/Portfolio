@@ -1,0 +1,43 @@
+extends layouts/_default.jade
+block title
+  title Уральская Сказка — бани из бруса «под ключ» от 75 000 рублей
+
+include ../components/1_Header/Header
+include ../components/2_Projects/Projects
+include ../components/3_Picking/Picking
+include ../components/4_Gallery/Gallery
+include ../components/5_Subform/Subform
+include ../components/6_Steps/Steps
+include ../components/7_Reviews/Reviews
+include ../components/8_Salesform/Salesform
+include ../components/9_About/About
+include ../components/10_Contacts/Contacts
+include ../components/11_Footer/Footer
+include ../components/12_Modals/Modals
+
+block content
+  main.desktop
+    section.header
+      +Header(Header.main)
+    section.projects#a-projects
+      +Projects(Projects)
+    section.picking#a-picking
+      +Picking(Picking_b)
+    section.gallery#a-gallery
+      +Gallery(Gallery)
+    section.subform.modal-style
+      +Subform(Subform)
+    section.steps
+      +Steps(Steps)
+    section.reviews#a-reviews
+      +Reviews(Reviews)
+    section.salesform.modal-style
+      +Salesform(Salesform)
+    section.about
+      +About(About)
+    section.contacts
+      +Contacts(Contacts)
+    footer.footer
+      +Footer(Footer)
+  .modals
+    +Modals(Modals)

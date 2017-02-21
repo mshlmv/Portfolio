@@ -1,0 +1,80 @@
+mixin Projects(data)
+  .container
+    header.section-heading
+      h1.head
+        |Проекты бань из бруса
+        span.h1-subhead Постройте баню Вашей мечты
+
+    .projects-grid
+      .projects-row.small-category
+        .projects-row__heading
+          h2=data.small_heading
+        .projects-row__items.row
+          for item in data['small']
+            .project-item.col-xs-4
+              .project-item__image
+                img.img-responsive(src="#{item.Render}", alt="#{item.Title}")
+                if item.Sale
+                  div.sale-bage= item.Sale
+              .project-item__description
+                .description__title: h3= item.Title
+                .description__dimensions
+                  strong Габариты:
+                  span= item.Dimensions
+                .description__square
+                  strong Площадь:
+                  span= item.Square
+                .description__price
+                  strong Цена:
+                  span!= item.Price
+              button.project-item__button.btn.btn-green.btn-block(type='button' data-toggle="modal" data-target="#project" data-render="#{item.Render}" data-scheme="#{item.Scheme}" data-photo="#{item.Photo}" data-render_thumb="#{item.Render_thumb}" data-scheme_thumb="#{item.Scheme_thumb}" data-photo_thumb="#{item.Photo_thumb}" data-heading="#{item.Title}" data-subtitle="#{item.Period}" data-dimensions="#{item.Dimensions}" data-square="#{item.Square}" data-price="#{item.Price}" data-picking="#{item.Picking}") Планировка и комплектация
+        .projects__more-button-row
+          button.projects__more-button.btn.btn-success(type="button" data-toggle="modal" data-target="#more-projects") Получить больше проектов
+      .projects-row.medium-category
+        .projects-row__heading
+          h2=data.medium_heading
+        .projects-row__items.row
+          for item in data['medium']
+            .project-item.col-xs-4
+              .project-item__image
+                img.img-responsive(src="#{item.Render}", alt="#{item.Title}")
+                if item.Sale
+                  div.sale-bage= item.Sale
+              .project-item__description
+                .description__title: h3= item.Title
+                .description__dimensions
+                  strong Габариты:
+                  span= item.Dimensions
+                .description__square
+                  strong Площадь:
+                  span= item.Square
+                .description__price
+                  strong Цена:
+                  span!= item.Price
+              button.project-item__button.btn.btn-green.btn-block(type='button' data-toggle="modal" data-target="#project" data-render="#{item.Render}" data-scheme="#{item.Scheme}" data-photo="#{item.Photo}" data-render_thumb="#{item.Render_thumb}" data-scheme_thumb="#{item.Scheme_thumb}" data-photo_thumb="#{item.Photo_thumb}" data-heading="#{item.Title}" data-subtitle="#{item.Period}" data-dimensions="#{item.Dimensions}" data-square="#{item.Square}" data-price="#{item.Price}" data-picking="#{item.Picking}") Планировка и комплектация
+        .projects__more-button-row
+          button.projects__more-button.btn.btn-success(type="button" data-toggle="modal" data-target="#more-projects") Получить больше проектов
+      .projects-row.big-category
+        .projects-row__heading
+          h2=data.big_heading
+        .projects-row__items.row
+          for item in data['big']
+            .project-item.col-xs-4
+              .project-item__image
+                img.img-responsive(src="#{item.Render}", alt="#{item.Title}")
+                if item.Sale
+                  div.sale-bage= item.Sale
+              .project-item__description
+                .description__title: h3= item.Title
+                .description__dimensions
+                  strong Габариты:
+                  span= item.Dimensions
+                .description__square
+                  strong Площадь:
+                  span= item.Square
+                .description__price
+                  strong Цена:
+                  span!= item.Price
+              button.project-item__button.btn.btn-green.btn-block(type='button' data-toggle="modal" data-target="#project" data-render="#{item.Render}" data-scheme="#{item.Scheme}" data-photo="#{item.Photo}" data-render_thumb="#{item.Render_thumb}" data-scheme_thumb="#{item.Scheme_thumb}" data-photo_thumb="#{item.Photo_thumb}" data-heading="#{item.Title}" data-subtitle="#{item.Period}" data-dimensions="#{item.Dimensions}" data-square="#{item.Square}" data-price="#{item.Price}" data-picking="#{item.Picking}") Планировка и комплектация
+        .projects__more-button-row
+          button.projects__more-button.btn.btn-success(type="button" data-toggle="modal" data-target="#more-projects") Получить больше проектов

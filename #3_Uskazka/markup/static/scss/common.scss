@@ -1,0 +1,191 @@
+// Common styles of the project
+
+body {
+  min-width: 1170px;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $background-color;
+}
+.container {
+  width: 1170px;
+  max-width: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1,
+.head {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.h1-subhead {
+  font-weight: 400;
+  margin-left: 10px;
+  &::before {
+    content: "|";
+    padding-right: 10px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.h2-subhead {
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 23px;
+  margin: 0;
+}
+
+section {
+  margin-top: 85px;
+}
+
+.header {
+  margin-top: 0;
+}
+
+.modal-style {
+  background: #fff;
+  border: 1px solid #f6f6f6;
+  border-right-width: 0;
+  border-left-width: 0;
+  box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.03);
+}
+
+.popover {
+  font-size: 12px
+}
+
+.footnote {
+  color: #ccc;
+}
+
+.security-guarantee,
+.footnote {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.security-guarantee {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  &::before {
+    content: '🔒';
+    font-style: normal;
+    padding-right: 5px;
+  }
+  a {
+    color: #ccc;
+    border-bottom: 1px dotted;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  text-align: center;
+  color: #0a0a0a;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: inset 0 0 6px 0 rgba(0,0,0,.03);
+}
+
+.form-group {
+  width: auto;
+}
+
+.form-label {
+  font-style: italic;
+  display: block;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 9px;
+  &:hover {
+    background-color: #fff;
+    color: #222;
+  }
+}
+
+.btn-wrap {
+  white-space: normal;
+}
+
+.btn-primary {
+  height: 60px;
+  margin-top: 35px;
+}
+
+.btn-success {
+  font-size: 18px;
+  height: 70px;
+  // border: 1px solid #a1a904;
+  // border-radius: 9px;
+  // background-image: linear-gradient(-180deg, #a9bf04 0%, #a9bf04 100%);
+  // text-shadow: 0 1px 0 #a1a904;
+}
+.btn-green {
+  font-size: 18px;
+  height: 70px;
+  border: 3px solid $light_green-color;
+  background-color: transparent;
+  color: $light_green-color;
+  &:hover {
+    background-color: $light_green-color;
+    color: #fff;
+    &:focus {
+      color: #fff;
+    }
+  }
+  &:focus {
+    color: $light_green-color;
+  }
+}
+

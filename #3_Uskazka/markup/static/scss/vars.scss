@@ -1,0 +1,26 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+// #Colors
+$white_cream-color: #FFFEF0;
+$dark_brown-color: #4C1B1B;
+$dark_green-color: #A1A904;
+$medium_green-color: #A9BF04;
+$light_green-color: #ADD705;
+
+$base-font-color: $dark_brown-color;
+$action-color: $medium_green-color;
+$background-color: $white_cream-color;
+
+// #Typography
+$base-font-family: "Open Sans", sans-serif;
+$heading-font-family: "Roboto Slab", serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// #Sizes
+$base-border-radius: 9px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;

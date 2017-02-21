@@ -1,0 +1,9 @@
+mixin Gallery(data)
+  .container
+    header.section-heading
+      h1.head Фотографии наших работ
+    .gallery-grid.row
+      for item in data['gallery']
+        .gallery-grid__item.col-xs-3
+          .gallery-thumb-wrap.modal-style
+            img.gallery-thumb-image.img-responsive(src="#{item.src}")
