@@ -1,0 +1,43 @@
+mixin Search(data)
+  .wrap
+    nav.breadcrumbs
+      each item in ['Главная', 'Туристам']
+        a(href="/").breadcrumbs-item= item
+      span.breadcrumbs-item--current Горящие туры
+
+    h1.page-heading Горящие туры
+
+    .search-form-box
+      form(id="", method="", action="").search-form
+        mixin search-form__item(label, pholder)
+          .search-form__item
+            label.search-form__label= label
+              input(type="text", placeholder=pholder).search-form__input
+
+        +search-form__item('Город вылета', 'Екатеринбург')
+        +search-form__item('Список стран', 'Египет')
+        +search-form__item('Курорт', 'Хургада')
+        .search-form__item
+          label.search-form__label Максимальное количество дней
+            select.search-form__input.search-form__select
+              option 6–14
+              option 14–28
+        .search-form__item
+          fieldset.search-form__rating
+            legend.search-form__label Категория отеля
+            .search-form__stars
+              span.star-rating
+                mixin star-rating(value, id, title)
+                  input(type="radio" name="rating" value=value id=id).star-rating__input
+                  label(for=id, title=title).star-rating__icon
+
+                +star-rating("5", "star-rating-5", "5 out of 5 stars")
+                +star-rating("4", "star-rating-4", "4 out of 5 stars")
+                +star-rating("3", "star-rating-3", "3 out of 5 stars")
+                +star-rating("2", "star-rating-2", "2 out of 5 stars")
+                +star-rating("1", "star-rating-1", "1 out of 5 stars")
+              span.more-stars
+                input(type="checkbox", id="more-stars")
+                label(for="more-stars").search-form__label Или более звезд
+        .search-form__item
+          button(type="submit").search-form__button Найти туры

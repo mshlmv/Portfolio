@@ -1,0 +1,51 @@
+mixin Result(data)
+  .wrap
+    .result
+      .result__top-bar
+        .result__info
+          | Найдено туров: <span>34</span>
+        .result__filter
+          ul.result__filter__list
+            each it in ["По имени", "По цене", "По рейтингу"]
+              li.result__filter__item
+                a(href="#").result__filter__link= it
+      .result__grid
+        for item in data['cards']
+          .result__grid__card
+            .result__grid__card--front
+              .card__image
+                img(src= item.img, alt= item.alt)
+                .card__rating
+                  img(src= item.rating_img)
+              .card__content
+                .card__title!= item.title
+                .card__price
+                  span.sale-price= item.sale_price
+                  span.normal-price= item.normal_price
+                .card__tags
+                  ul.tags__list
+                    each it in item['tags']
+                      li.tags__item= it
+            .result__grid__card--back
+              .card__rating
+                img(src= item.back_rating)
+              .card__title
+                .back_title_first= item.back_title_first
+                .back_title_second= item.back_title_second
+              .card__tags
+                ul.card__tags__list
+                  li.card__tags__item.from
+                    span= item.from
+                  li.card__tags__item.out
+                    span= item.out
+                  li.card__tags__item.night
+                    span= item.night
+                  li.card__tags__item.eat
+                    span= item.eat
+              .card__footer
+                .card__price
+                  .normal-price= item.normal_price
+                  .sale-price= item.sale_price
+                  .note-price с человека
+                .more-button
+                  a(href="#").button Подробнее

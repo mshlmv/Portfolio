@@ -1,0 +1,13 @@
+mixin Header(data)
+  .header
+    .header__in.wrap
+      a(href="/").header__logotype
+        .fake-logo
+      nav.header__menu
+        each item in ['Туристам', 'Информация', 'Агентам', 'Контакты']
+          a(href="/").menu-item= item
+      .header__aside
+        .choice-city
+          | Ваш город: <a href="#" class="choice-city__link">Екатеринбург</a>
+        .telephone
+          a(href="tel:+73433331111") +7 (343) 333-11-11

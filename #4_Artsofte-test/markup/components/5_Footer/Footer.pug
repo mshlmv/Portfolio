@@ -1,0 +1,38 @@
+mixin Footer(data)
+  .footer
+    .footer__in.wrap
+      .footer__first-half
+        .footer__column
+          h4 Популярные страны
+          ul.popular-countries
+            each it in ["Китай", "Тайланд", "Чехия", "Франция", "Греция"]
+              li.popular-countries__item
+                a(href="#")= it
+        .footer__column
+          nav.footer-menu
+            each it in ["О компании", "Информация", "Корпоративным клиентам"]
+              a(href="#")= it
+        .footer__column
+          h4 Коллекции туров
+          ul.collection-tours
+            each it in ["Свадебные туры", "Круизы", "Активный отдых", "Здоровье и спа"]
+              li.collection-tours__item
+                a(href="#")= it
+      hr.footer__hr
+      .footer__second-half
+        .footer__column.office
+          p Центральный офис:
+          p Екатеринбург
+          p <a href="#">Другие офисы</a>
+        .footer__column.copyright
+          p &copy; 2004–2015
+          p Все права защищены. <a href="#">Карта сайта</a>
+        .footer__column
+          ul.social-links
+            li.social-links__item
+              a(href="#").social-links__link.vk
+                img(src="static/img/assets/5_Footer/vk.svg", alt="Vkontakte")
+            li.social-links__item
+              a(href="#").social-links__link.fb
+                img(src="static/img/assets/5_Footer/fb.svg", alt="Facebook")
+          a(href="#").subscribe-link Подписаться на рассылку

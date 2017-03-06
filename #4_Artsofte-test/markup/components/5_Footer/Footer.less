@@ -1,0 +1,147 @@
+@color-bg-footer: #363b44;
+@color-text-footer: #97979e;
+@color-icon-bg: #ed1c24;
+
+.footer {
+  width: 100%;
+  background-color: @color-bg-footer;
+  padding: 35px 0;
+
+  h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: @color-text-footer;
+    }
+
+  }
+
+}
+
+.footer__first-half,
+.footer__second-half {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+
+  @media only screen and (min-width : 768px) {
+    flex-flow: row;
+  }
+
+}
+.footer__column {
+  margin: 0 0 25px 0;
+
+  @media only screen and (min-width : 768px) {
+    flex-basis: 330px;
+    margin: 0;
+  }
+
+}
+
+.popular-countries,
+.collection-tours {
+  .nl();
+
+  &__item {
+    margin: 0 20px 0 0;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
+
+.footer-menu a {
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.footer__hr {
+  border-top: 1px solid #4a4f57;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  margin: 0 0 25px 0;
+}
+
+.office {
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #fff;
+
+  p:first-child {
+    color: @color-text-footer;
+    margin-top: 0;
+  }
+
+  a {
+    text-transform: none;
+    border-bottom: 1px dotted #fff;
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 400;
+  color: @color-text-footer;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    color: @color-text-footer;
+    text-decoration: underline;
+    font-size: 10px;
+    text-transform: none;
+  }
+}
+.social-links {
+  .nl();
+
+  &__item {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: @color-icon-bg;
+    border-radius: 3px;
+    position: relative;
+
+    img {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: calc( 50% - 36px );
+      top: calc( 50% - 36px );
+
+    }
+
+  }
+}
+
+a.subscribe-link {
+  color: @color-text-footer;
+  text-decoration: underline;
+  font-size: 11px;
+  text-transform: none;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16">
+  <defs>
+    <style>
+      .cls-1 { fill: #fff; fill-rule: evenodd; }
+    </style>
+  </defs>
+  <path id="Фигура_5" d="M4 0v4.5a.5.5 0 0 1-1 0V0H2v4.5a.5.5 0 0 1-1 0V0a1 1 0 0 0-1 1v5c0 .55 1.45 1 2 1l-1 7.5a1.5 1.5 0 0 0 3 0L3 7c.553 0 2-.45 2-1V1a1 1 0 0 0-1-1zm5 9h2l-1 7h2V0S9 .94 9 9z" data-name="Фигура 5" class="cls-1"/>
+</svg>

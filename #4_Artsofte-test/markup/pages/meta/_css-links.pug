@@ -1,0 +1,8 @@
+//- Css links
+mixin ie(condition, content)
+  | <!--[!{condition}]>!{content}<![endif]-->
+//
+//- +ie('if IE 8', '<link href="%=static=%css/main_ie8%=hash=%%=min=%.css" rel="stylesheet">')
+//
+//- +ie('if IE 9', '<link href="%=static=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet">')
+link(rel='stylesheet' href='%=static=%css/main%=hash=%%=min=%.css')

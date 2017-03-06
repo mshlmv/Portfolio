@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Maksim Sholomov ⚓ mshlmv.ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artsofte Test</title>
+    <!---->
+    <!---->
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+  <body class="site">
+    <div class="header">
+      <div class="header__in wrap"><a class="header__logotype" href="/">
+          <div class="fake-logo"></div></a>
+        <nav class="header__menu"><a class="menu-item" href="/">Туристам</a><a class="menu-item" href="/">Информация</a><a class="menu-item" href="/">Агентам</a><a class="menu-item" href="/">Контакты</a>
+        </nav>
+        <div class="header__aside">
+          <div class="choice-city">Ваш город: <a href="#" class="choice-city__link">Екатеринбург</a></div>
+          <div class="telephone"><a href="tel:+73433331111">+7 (343) 333-11-11</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <nav class="breadcrumbs"><a class="breadcrumbs-item" href="/">Главная</a><a class="breadcrumbs-item" href="/">Туристам</a><span class="breadcrumbs-item--current">Горящие туры</span>
+      </nav>
+      <h1 class="page-heading">Горящие туры</h1>
+      <div class="search-form-box">
+        <form class="search-form" id="" method="" action="">
+                <div class="search-form__item">
+                  <label class="search-form__label">Город вылета
+                    <input class="search-form__input" type="text" placeholder="Екатеринбург"/>
+                  </label>
+                </div>
+                <div class="search-form__item">
+                  <label class="search-form__label">Список стран
+                    <input class="search-form__input" type="text" placeholder="Египет"/>
+                  </label>
+                </div>
+                <div class="search-form__item">
+                  <label class="search-form__label">Курорт
+                    <input class="search-form__input" type="text" placeholder="Хургада"/>
+                  </label>
+                </div>
+          <div class="search-form__item">
+            <label class="search-form__label">Максимальное количество дней
+              <select class="search-form__input search-form__select">
+                <option>6–14</option>
+                <option>14–28</option>
+              </select>
+            </label>
+          </div>
+          <div class="search-form__item">
+            <fieldset class="search-form__rating">
+              <legend class="search-form__label">Категория отеля</legend>
+              <div class="search-form__stars"><span class="star-rating">
+                                <input class="star-rating__input" type="radio" name="rating" value="5" id="star-rating-5"/>
+                                <label class="star-rating__icon" for="star-rating-5" title="5 out of 5 stars"></label>
+                                <input class="star-rating__input" type="radio" name="rating" value="4" id="star-rating-4"/>
+                                <label class="star-rating__icon" for="star-rating-4" title="4 out of 5 stars"></label>
+                                <input class="star-rating__input" type="radio" name="rating" value="3" id="star-rating-3"/>
+                                <label class="star-rating__icon" for="star-rating-3" title="3 out of 5 stars"></label>
+                                <input class="star-rating__input" type="radio" name="rating" value="2" id="star-rating-2"/>
+                                <label class="star-rating__icon" for="star-rating-2" title="2 out of 5 stars"></label>
+                                <input class="star-rating__input" type="radio" name="rating" value="1" id="star-rating-1"/>
+                                <label class="star-rating__icon" for="star-rating-1" title="1 out of 5 stars"></label></span><span class="more-stars">
+                  <input type="checkbox" id="more-stars"/>
+                  <label class="search-form__label" for="more-stars">Или более звезд</label></span></div>
+            </fieldset>
+          </div>
+          <div class="search-form__item">
+            <button class="search-form__button" type="submit">Найти туры</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="result">
+        <div class="result__top-bar">
+          <div class="result__info">Найдено туров: <span>34</span></div>
+          <div class="result__filter">
+            <ul class="result__filter__list">
+              <li class="result__filter__item"><a class="result__filter__link" href="#">По имени</a></li>
+              <li class="result__filter__item"><a class="result__filter__link" href="#">По цене</a></li>
+              <li class="result__filter__item"><a class="result__filter__link" href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="result__grid">
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-one.png" alt="Сан-сиро"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Сан-сиро</strong>, Болгария</div>
+                <div class="card__price"><span class="sale-price">64 523</span><span class="normal-price">88 300</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">24 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Сан-сиро</div>
+                <div class="back_title_second">Болгария</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>24 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">88 300</div>
+                  <div class="sale-price">64 523</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-two.png" alt="Золотой Берег-Терло"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Золотой Берег-Терло</strong>, Пицунда, Абхазия</div>
+                <div class="card__price"><span class="sale-price">85 236</span><span class="normal-price">95 566</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Золотой Берег-Терло</div>
+                <div class="back_title_second">Пицунда, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">95 566</div>
+                  <div class="sale-price">85 236</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-three.png" alt="Ива Гостиница"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars4of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Ива Гостиница</strong>, Новый Афон, Абхазия</div>
+                <div class="card__price"><span class="sale-price">75 233</span><span class="normal-price">85 600</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Ива Гостиница</div>
+                <div class="back_title_second">Новый Афон, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">85 600</div>
+                  <div class="sale-price">75 233</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-four.png" alt="Джанат"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Джанат</strong>, Сухум, Абхазия</div>
+                <div class="card__price"><span class="sale-price">52 465</span><span class="normal-price">88 300</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Джанат</div>
+                <div class="back_title_second">Сухум, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">88 300</div>
+                  <div class="sale-price">52 465</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-four.png" alt="Эвкалипт"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Эвкалипт</strong>, Сухум, Абхазия</div>
+                <div class="card__price"><span class="sale-price">85 236</span><span class="normal-price">96 566</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Эвкалипт</div>
+                <div class="back_title_second">Сухум, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">96 566</div>
+                  <div class="sale-price">85 236</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-five.png" alt="Парус пансионат Пицунда"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars4of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Парус пансионат Пицунда</strong>, Гудаута, Абхазия</div>
+                <div class="card__price"><span class="sale-price">75 233</span><span class="normal-price">85 600</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Парус пансионат Пицунда</div>
+                <div class="back_title_second">Гудаута, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">85 600</div>
+                  <div class="sale-price">75 233</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-six.png" alt="Афон Дакир"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Афон Дакир</strong>, Новый Афон, Абхазия</div>
+                <div class="card__price"><span class="sale-price">55 455</span><span class="normal-price">88 300</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Афон Дакир</div>
+                <div class="back_title_second">Новый Афон, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">88 300</div>
+                  <div class="sale-price">55 455</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-seven.png" alt="Ахра Гостевой дом"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars2of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Ахра Гостевой дом</strong>, Гагра, Абхазия</div>
+                <div class="card__price"><span class="sale-price">54 834</span><span class="normal-price">96 566</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Ахра Гостевой дом</div>
+                <div class="back_title_second">Гагра, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">96 566</div>
+                  <div class="sale-price">54 834</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="result__grid__card">
+            <div class="result__grid__card--front">
+              <div class="card__image"><img src="static/img/assets/3_Result/img-eight.png" alt="Парус пансионат Пицунда"/>
+                <div class="card__rating"><img src="static/img/assets/3_Result/stars4of5.png"/></div>
+              </div>
+              <div class="card__content">
+                <div class="card__title"><strong>Парус пансионат Пицунда</strong>, Гудаута, Абхазия</div>
+                <div class="card__price"><span class="sale-price">55 796</span><span class="normal-price">85 600</span></div>
+                <div class="card__tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Из Москвы</li>
+                    <li class="tags__item">28 июня</li>
+                    <li class="tags__item">7 ночей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="result__grid__card--back">
+              <div class="card__rating"><img src="static/img/assets/3_Result/stars3of5-hover.png"/></div>
+              <div class="card__title">
+                <div class="back_title_first">Парус пансионат Пицунда</div>
+                <div class="back_title_second">Гудаута, Абхазия</div>
+              </div>
+              <div class="card__tags">
+                <ul class="card__tags__list">
+                  <li class="card__tags__item from"><span>Из Москвы</span></li>
+                  <li class="card__tags__item out"><span>28 июня</span></li>
+                  <li class="card__tags__item night"><span>7 ночей</span></li>
+                  <li class="card__tags__item eat"><span>Завтрак</span></li>
+                </ul>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">
+                  <div class="normal-price">85 600</div>
+                  <div class="sale-price">55 796</div>
+                  <div class="note-price">с человека</div>
+                </div>
+                <div class="more-button"><a class="button" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="seotext-block">
+        <h3>Уверенность в путешествиях</h3>
+        <div class="seotext__columns">
+          <p>Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и веб-технологий для финансового сектора, телекоммуникационных компаний и авиа отрасли. Также, среди наших собственных продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса.</p>
+          <p>Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и веб-технологий для финансового сектора, телекоммуникационных компаний и авиа отрасли. Также, среди наших собственных продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса.</p>
+          <p>Сегодня Artsofte это веб-интегратор, разрабатывающий сложные программные решения и системы самообслуживания клиентов с применением мобильных и продуктов, есть лидирующие в своих отраслях облачные решения для недвижимости и автобизнеса.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__in wrap">
+        <div class="footer__first-half">
+          <div class="footer__column">
+            <h4>Популярные страны</h4>
+            <ul class="popular-countries">
+              <li class="popular-countries__item"><a href="#">Китай</a></li>
+              <li class="popular-countries__item"><a href="#">Тайланд</a></li>
+              <li class="popular-countries__item"><a href="#">Чехия</a></li>
+              <li class="popular-countries__item"><a href="#">Франция</a></li>
+              <li class="popular-countries__item"><a href="#">Греция</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <nav class="footer-menu"><a href="#">О компании</a><a href="#">Информация</a><a href="#">Корпоративным клиентам</a>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <h4>Коллекции туров</h4>
+            <ul class="collection-tours">
+              <li class="collection-tours__item"><a href="#">Свадебные туры</a></li>
+              <li class="collection-tours__item"><a href="#">Круизы</a></li>
+              <li class="collection-tours__item"><a href="#">Активный отдых</a></li>
+              <li class="collection-tours__item"><a href="#">Здоровье и спа</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer__hr"/>
+        <div class="footer__second-half">
+          <div class="footer__column office">
+            <p>Центральный офис:</p>
+            <p>Екатеринбург</p>
+            <p><a href="#">Другие офисы</a></p>
+          </div>
+          <div class="footer__column copyright">
+            <p>&copy; 2004–2015</p>
+            <p>Все права защищены. <a href="#">Карта сайта</a></p>
+          </div>
+          <div class="footer__column">
+            <ul class="social-links">
+              <li class="social-links__item"><a class="social-links__link vk" href="#"><img src="static/img/assets/5_Footer/vk.svg" alt="Vkontakte"/></a></li>
+              <li class="social-links__item"><a class="social-links__link fb" href="#"><img src="static/img/assets/5_Footer/fb.svg" alt="Facebook"/></a></li>
+            </ul><a class="subscribe-link" href="#">Подписаться на рассылку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/static/js/main.js"></script>
+</html>

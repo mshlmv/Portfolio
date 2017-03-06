@@ -1,0 +1,16 @@
+extends layouts/_default.pug
+block title
+  title Artsofte Test
+
+include ../components/1_Header/Header
+include ../components/2_Search/Search
+include ../components/3_Result/Result
+include ../components/4_Seotext/Seotext
+include ../components/5_Footer/Footer
+
+block content
+  +Header(Header)
+  +Search(Search)
+  +Result(Result)
+  +Seotext(Seotext)
+  +Footer(Footer)
